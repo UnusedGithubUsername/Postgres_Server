@@ -342,8 +342,7 @@ public class DatabaseConnection
         //1) TRUNCATE TABLE items
         using NpgsqlCommand cmd0 = new NpgsqlCommand("TRUNCATE TABLE items", database);
         cmd0.ExecuteNonQuery();
-
-
+         
         //2) get all guids from table. 
         List<int> playerGuids = new List<int>();
 
